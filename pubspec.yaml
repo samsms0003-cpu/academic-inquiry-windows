@@ -1,0 +1,95 @@
+name: academic_inquiry
+description: "نظام الاستعلامات الأكاديمية - كلية الصماد للقرآن الكريم وعلومه"
+publish_to: 'none'
+version: 2.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State
+  provider: 6.1.5+1
+
+  # Database (SQLite native + web ffi)
+  sqflite: ^2.4.1
+  sqflite_common_ffi: ^2.3.4
+  sqflite_common_ffi_web: ^0.4.5
+  path: ^1.9.0
+
+  # Storage
+  shared_preferences: 2.5.3
+  path_provider: 2.1.5
+  file_picker: ^10.2.0
+  share_plus: ^11.0.0
+
+  # Files: XLSX (Open XML) reading/writing, CSV
+  archive: ^3.6.1
+  xml: ^6.5.0
+  csv: ^6.0.0
+  crypto: ^3.0.6
+
+  # PDF
+  pdf: ^3.11.3
+  printing: ^5.14.2
+
+  # Scanner
+  mobile_scanner: ^7.0.1
+  image_picker: ^1.1.2
+
+  # Utils
+  intl: 0.20.2
+  url_launcher: ^6.3.1
+  collection: ^1.19.0
+  sqlite3_flutter_libs: ^0.5.42
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/student_data.xlsx
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/cairo-400.ttf
+          weight: 400
+        - asset: assets/fonts/cairo-500.ttf
+          weight: 500
+        - asset: assets/fonts/cairo-600.ttf
+          weight: 600
+        - asset: assets/fonts/cairo-700.ttf
+          weight: 700
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/amiri-400.ttf
+          weight: 400
+        - asset: assets/fonts/amiri-700.ttf
+          weight: 700
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/tajawal-400.ttf
+          weight: 400
+        - asset: assets/fonts/tajawal-700.ttf
+          weight: 700
+    - family: Almarai
+      fonts:
+        - asset: assets/fonts/almarai-400.ttf
+          weight: 400
+        - asset: assets/fonts/almarai-700.ttf
+          weight: 700
+    - family: NotoNaskh
+      fonts:
+        - asset: assets/fonts/notonaskh.ttf
